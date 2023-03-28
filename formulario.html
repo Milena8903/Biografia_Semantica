@@ -48,6 +48,45 @@
             <input type="radio" name="edad" id="adulto" value="26-55">
             <label for="tercera">Tercera Edad</label>
             <input type="radio" name="edad" id="tercera" value="más de 55">
+            <br>
+            <br>
+            <label for="rango">Rango:</label>
+            <input type="range" id="ingreso" name="ingreso" min="0" max="100">
+            <br>
+            <br>
+             <label for="terminos">Terminos:</label>
+             <input type="checkbox" name="terminos" id="terminos" value="si">
+            <br>
+            <br>
+            <select name="pais" id="pais">
+                <option value="co" selected>Colombia</option>
+                <option value="br">Brasil</option>
+                <option value="ca">Canada</option>
+                <option value="ec">Ecuador</option>
+            </select>
+            <br>
+            <br>
+                <textarea name="datos" id="datos" cols="30" rows="10">
+
+                </textarea>
+             <button type="reset">Borrar</button>
+             <button type="submit">Enviar</button>
+             
+             <!-- Forma no recomendada
+             <button type="button" 
+              onclick="console.log('Hizo click en el boton')">Botón</button>
+             -->
+
+             <button type="button" 
+              onclick="mostrarMensaje()">
+                Botón
+            </button>
+
+            <button type="button" id="otroBoton">
+                Botón 2
+            </button>
+
+              <script src="programa.js"></script>
         </fieldset>
 
     </form>
