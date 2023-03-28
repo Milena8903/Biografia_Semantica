@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="procesar.html" method="post">
+
+        <fieldset>
+            <legend>Controles del formulario</legend>
+            <label for="usuario">usuario:</label>
+            <input type="text" 
+            pattern="[A-Z][a-z]{0,5}"
+            title="Ingresar un nombre de maximo 5 letras"
+            value="Prueba"
+            id="usuario" 
+            required
+            name="usuario" 
+            placeholder="Ingrese el usuario"/>
+            <br>
+            <br>
+            <label for="correo">Correo:</label>
+            <input type="email"
+            id="correo"
+            size="40"
+            name="correo"
+            multiple/> 
+            <br>
+            <br>
+            <label for="telefono">Telefono:</label>
+            <input type="tel"
+            id="tel"
+            name="tel"/> 
+            <br>
+            <br>
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha">
+            <input type="submit">
+            <br>
+            <br>
+            <!-- Radio -->
+            <label for="joven">Joven</label>
+            <input type="radio" name="edad" id="joven" value="0-25">
+            <label for="adulto">Adulto</label>
+            <input type="radio" name="edad" id="adulto" value="26-55">
+            <label for="tercera">Tercera Edad</label>
+            <input type="radio" name="edad" id="tercera" value="más de 55">
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>
